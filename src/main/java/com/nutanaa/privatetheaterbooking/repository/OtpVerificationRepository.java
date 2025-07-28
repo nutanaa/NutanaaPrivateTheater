@@ -402,14 +402,19 @@ public interface OtpVerificationRepository extends JpaRepository<OtpVerification
 
     /**
      * Find rapid-fire OTP requests (potential bot activity)
+     * TODO: Fix for H2 database - temporarily disabled
      */
+    /*
     @Query("SELECT o FROM OtpVerification o WHERE " +
            "o.createdAt >= :timeThreshold AND " +
            "EXISTS (SELECT o2 FROM OtpVerification o2 WHERE " +
            "o2.requestIpAddress = o.requestIpAddress AND " +
-           "o2.createdAt BETWEEN o.createdAt - INTERVAL 1 MINUTE AND o.createdAt + INTERVAL 1 MINUTE AND " +
+           "o2.createdAt BETWEEN :startTime AND :endTime AND " +
            "o2.otpId != o.otpId)")
-    List<OtpVerification> findRapidFireOtpRequests(@Param("timeThreshold") LocalDateTime timeThreshold);
+    List<OtpVerification> findRapidFireOtpRequests(@Param("timeThreshold") LocalDateTime timeThreshold,
+                                                   @Param("startTime") LocalDateTime startTime,
+                                                   @Param("endTime") LocalDateTime endTime);
+    */
 
     /**
      * Find never-used OTPs (generated but never attempted)

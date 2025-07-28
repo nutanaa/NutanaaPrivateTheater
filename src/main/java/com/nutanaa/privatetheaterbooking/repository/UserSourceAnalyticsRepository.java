@@ -475,27 +475,36 @@ public interface UserSourceAnalyticsRepository extends JpaRepository<UserSourceA
 
     /**
      * Recalculate all conversion rates
+     * TODO: Fix casting issue with BigDecimal
      */
+    /*
     @Modifying
     @Query("UPDATE UserSourceAnalytics s SET s.conversionRate = " +
-           "CASE WHEN s.userCount > 0 THEN (s.bookingConversions * 100.0 / s.userCount) ELSE 0 END")
+           "CASE WHEN s.userCount > 0 THEN CAST((s.bookingConversions * 100.0 / s.userCount) AS java.math.BigDecimal) ELSE CAST(0 AS java.math.BigDecimal) END")
     int recalculateAllConversionRates();
+    */
 
     /**
      * Recalculate all average customer values
+     * TODO: Fix casting issue with BigDecimal
      */
+    /*
     @Modifying
     @Query("UPDATE UserSourceAnalytics s SET s.avgCustomerValue = " +
-           "CASE WHEN s.userCount > 0 THEN (s.totalRevenue / s.userCount) ELSE 0 END")
+           "CASE WHEN s.userCount > 0 THEN CAST((s.totalRevenue / s.userCount) AS java.math.BigDecimal) ELSE CAST(0 AS java.math.BigDecimal) END")
     int recalculateAllAvgCustomerValues();
+    */
 
     /**
      * Recalculate all ROI percentages
+     * TODO: Fix casting issue with BigDecimal
      */
+    /*
     @Modifying
     @Query("UPDATE UserSourceAnalytics s SET s.roiPercentage = " +
            "CASE WHEN s.marketingCost > 0 THEN ((s.totalRevenue - s.marketingCost) / s.marketingCost * 100) ELSE 0 END")
     int recalculateAllROIPercentages();
+    */
 
     // ========================================
     // ADMIN DASHBOARD QUERIES

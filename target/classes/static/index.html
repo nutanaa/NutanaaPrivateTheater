@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutanaa - Premium Private Theater Experience</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h1 class="brand-name">NUTANAA</h1>
+                <div class="loading-subtitle">Premium Private Theater Experience</div>
+            </div>
+            <div class="loading-animation">
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Brand Logo -->
+                <div class="brand">
+                    <h1 class="brand-logo">
+                        <i class="fas fa-film"></i>
+                        NUTANAA
+                    </h1>
+                    <span class="brand-tagline">Premium Theaters</span>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#theaters" class="nav-link">
+                            <i class="fas fa-video"></i>
+                            <span>Theaters</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#bookings" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Bookings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="fas fa-info-circle"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-phone"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- User Actions -->
+                <div class="nav-actions">
+                    <button class="btn-login" onclick="openLoginModal()">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </button>
+                    <button class="btn-menu-toggle" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <video class="hero-video" autoplay muted loop>
+                <source src="/videos/theater-hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Experience Cinema</span>
+                    <span class="title-line">Like Never Before</span>
+                </h1>
+                <p class="hero-description">
+                    Book your private theater and immerse yourself in the ultimate cinematic experience. 
+                    Premium sound, stunning visuals, and complete privacy for you and your loved ones.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary hero-btn" onclick="scrollToSection('theaters')">
+                        <i class="fas fa-play"></i>
+                        Explore Theaters
+                    </button>
+                    <button class="btn-secondary hero-btn" onclick="openBookingModal()">
+                        <i class="fas fa-calendar-plus"></i>
+                        Book Now
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Hero Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Premium Theaters</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Bookings Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Nutanaa?</h2>
+                <p class="section-subtitle">Experience the future of private entertainment</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Experience</h3>
+                    <p class="feature-description">
+                        Luxury seating, state-of-the-art technology, and personalized service for an unforgettable experience.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Complete Privacy</h3>
+                    <p class="feature-description">
+                        Your own private space with no interruptions. Perfect for dates, family time, or celebrations.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Booking</h3>
+                    <p class="feature-description">
+                        Simple mobile-based booking with OTP verification. Book instantly with just a few taps.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3 class="feature-title">Dolby Atmos Sound</h3>
+                    <p class="feature-description">
+                        Immersive audio technology that puts you right in the center of the action.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="feature-title">4K Ultra HD</h3>
+                    <p class="feature-description">
+                        Crystal clear visuals with 4K projection and premium screen technology.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Service</h3>
+                    <p class="feature-description">
+                        Dedicated staff, refreshments, and personalized assistance throughout your visit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Theaters Section -->
+    <section id="theaters" class="theaters-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Theaters</h2>
+                <p class="section-subtitle">Discover our most loved private theater experiences</p>
+            </div>
+            
+            <div class="theaters-grid">
+                <!-- Theater cards will be loaded dynamically -->
+                <div class="theater-card-skeleton">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-content">
+                        <div class="skeleton-line"></div>
+                        <div class="skeleton-line short"></div>
+                        <div class="skeleton-line"></div>
+                    </div>
+                </div>
+                <!-- More skeleton cards... -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn-primary" onclick="loadAllTheaters()">
+                    <i class="fas fa-th-large"></i>
+                    View All Theaters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Book your private theater in 3 simple steps</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Choose Theater</h3>
+                        <p class="step-description">
+                            Browse and select from our premium theater locations with detailed information and reviews.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Book & Verify</h3>
+                        <p class="step-description">
+                            Select date, time, and submit your booking details. Verify with OTP for secure confirmation.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Enjoy Experience</h3>
+                        <p class="step-description">
+                            Arrive at your theater and enjoy the ultimate private cinema experience with premium amenities.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from real customers</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Amazing experience! The private theater was perfect for our anniversary. 
+                            Great sound quality and extremely comfortable seating."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="/images/avatars/customer1.jpg" alt="Customer">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Priya Sharma</h4>
+                            <p class="author-detail">Mumbai, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More testimonials... -->
+            </div>
+            
+            <div class="testimonials-navigation">
+                <button class="nav-btn prev" onclick="previousTestimonial()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-dots">
+                    <span class="dot active" onclick="currentTestimonial(1)"></span>
+                    <span class="dot" onclick="currentTestimonial(2)"></span>
+                    <span class="dot" onclick="currentTestimonial(3)"></span>
+                </div>
+                <button class="nav-btn next" onclick="nextTestimonial()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready for Your Private Theater Experience?</h2>
+                <p class="cta-description">
+                    Join thousands of satisfied customers who have experienced the magic of private cinema.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn-primary cta-btn" onclick="openBookingModal()">
+                        <i class="fas fa-ticket-alt"></i>
+                        Book Your Theater
+                    </button>
+                    <button class="btn-outline cta-btn" onclick="openLoginModal()">
+                        <i class="fas fa-user-plus"></i>
+                        Create Account
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">
+                        <i class="fas fa-film"></i>
+                        NUTANAA
+                    </h3>
+                    <p class="footer-description">
+                        Premium private theater experiences that bring cinema to life. 
+                        Book now and create unforgettable memories.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4 class="link-title">Quick Links</h4>
+                        <ul class="link-list">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#theaters">Theaters</a></li>
+                            <li><a href="#bookings">Bookings</a></li>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4 class="link-title">Support</h4>
+                        <ul class="link-list">
+                            <li><a href="#help">Help Center</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4 class="link-title">Contact Info</h4>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 98765 43210</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>info@nutanaa.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mumbai, Maharashtra, India</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Nutanaa Private Theater Booking Platform. All rights reserved.</p>
+                </div>
+                <div class="footer-policies">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login to Nutanaa
+                </h2>
+                <button class="modal-close" onclick="closeModal('loginModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="mobileNumber" class="form-label">
+                            <i class="fas fa-mobile-alt"></i>
+                            Mobile Number
+                        </label>
+                        <input type="tel" id="mobileNumber" name="mobileNumber" class="form-input" 
+                               placeholder="+91 98765 43210" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-info-circle"></i>
+                            Where did you hear about us?
+                        </label>
+                        <select name="heardAboutUs" class="form-select" required>
+                            <option value="">Select source...</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Google Search">Google Search</option>
+                            <option value="Friends/Family">Friends/Family</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Word of Mouth">Word of Mouth</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary auth-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send OTP
+                    </button>
+                </form>
+                
+                <!-- OTP Verification Form (initially hidden) -->
+                <form id="otpForm" class="auth-form hidden">
+                    <div class="otp-header">
+                        <p class="otp-message">
+                            We've sent a 6-digit OTP to your mobile number
+                        </p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="otpCode" class="form-label">
+                            <i class="fas fa-key"></i>
+                            Enter OTP
+                        </label>
+                        <input type="text" id="otpCode" name="otpCode" class="form-input otp-input" 
+                               placeholder="000000" maxlength="6" required>
+                    </div>
+                    
+                    <div class="otp-timer">
+                        <span id="otpTimer">Resend OTP in <strong>60</strong> seconds</span>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary auth-btn">
+                        <i class="fas fa-check"></i>
+                        Verify OTP
+                    </button>
+                    
+                    <button type="button" class="btn-link" onclick="resendOTP()" id="resendBtn" disabled>
+                        <i class="fas fa-redo"></i>
+                        Resend OTP
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header" onclick="toggleChatbot()">
+            <div class="chatbot-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-title">
+                <h4>Nutanaa Assistant</h4>
+                <p>How can I help you?</p>
+            </div>
+            <div class="chatbot-toggle">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        
+        <div class="chatbot-body">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi! I'm your Nutanaa assistant. How can I help you with your theater booking today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." class="chat-text-input">
+                <button class="chat-send-btn" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/chatbot.js"></script>
+    <script src="/js/booking.js"></script>
+</body>
+</html>
