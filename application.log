@@ -1,0 +1,605 @@
+nohup: ignoring input
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.nutanaa:private-theater-booking[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding Nutanaa Private Theater Booking Platform 1.0.0[m
+[[1;34mINFO[m]   from pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot:3.1.5:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mprivate-theater-booking[0;1m >>>[m
+[[1;33mWARNING[m] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mprivate-theater-booking[0;1m ---[m
+[[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 8 resources from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.11.0:compile[m [1m(default-compile)[m @ [36mprivate-theater-booking[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :source
+[[1;34mINFO[m] Compiling 15 source files with javac [debug release 17] to target/classes
+[[1;34mINFO[m] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[[1;33mWARNING[m] /workspace/src/main/java/com/nutanaa/privatetheaterbooking/config/SecurityConfig.java:[30,40] frameOptions() in org.springframework.security.config.annotation.web.configurers.HeadersConfigurer has been deprecated and marked for removal
+[[1;34mINFO[m] /workspace/src/main/java/com/nutanaa/privatetheaterbooking/model/PrivateTheater.java: /workspace/src/main/java/com/nutanaa/privatetheaterbooking/model/PrivateTheater.java uses or overrides a deprecated API.
+[[1;34mINFO[m] /workspace/src/main/java/com/nutanaa/privatetheaterbooking/model/PrivateTheater.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mprivate-theater-booking[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /workspace/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36mprivate-theater-booking[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot:3.1.5:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mprivate-theater-booking[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot:3.1.5:run[m [1m(default-cli)[m @ [36mprivate-theater-booking[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2025-07-28 01:43:25 - Starting NutanaaPrivateTheaterBookingApplication using Java 21.0.7 with PID 6153 (/workspace/target/classes started by ubuntu in /workspace)
+2025-07-28 01:43:25 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-07-28 01:43:25 - No active profile set, falling back to 1 default profile: "default"
+2025-07-28 01:43:25 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-28 01:43:25 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-28 01:43:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-28 01:43:25 - Finished Spring Data repository scanning in 32 ms. Found 6 JPA repository interfaces.
+2025-07-28 01:43:26 - Tomcat initialized with port(s): 8080 (http)
+2025-07-28 01:43:26 - Starting service [Tomcat]
+2025-07-28 01:43:26 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-07-28 01:43:26 - Initializing Spring embedded WebApplicationContext
+2025-07-28 01:43:26 - Root WebApplicationContext: initialization completed in 825 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-07-28 01:43:26 - HikariPool-1 - Starting...
+2025-07-28 01:43:26 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:nutanaa_theater_booking user=SA
+2025-07-28 01:43:26 - HikariPool-1 - Start completed.
+2025-07-28 01:43:26 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:nutanaa_theater_booking'
+2025-07-28 01:43:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-28 01:43:26 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-07-28 01:43:26 - HHH000406: Using bytecode reflection optimizer
+2025-07-28 01:43:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-28 01:43:26 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-28 01:43:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-28 01:43:27 - 
+    drop table if exists customer_feedback cascade 
+Hibernate: 
+    drop table if exists customer_feedback cascade 
+2025-07-28 01:43:27 - 
+    drop table if exists otp_verifications cascade 
+Hibernate: 
+    drop table if exists otp_verifications cascade 
+2025-07-28 01:43:27 - 
+    drop table if exists private_theaters cascade 
+Hibernate: 
+    drop table if exists private_theaters cascade 
+2025-07-28 01:43:27 - 
+    drop table if exists theater_bookings cascade 
+Hibernate: 
+    drop table if exists theater_bookings cascade 
+2025-07-28 01:43:27 - 
+    drop table if exists user_accounts cascade 
+Hibernate: 
+    drop table if exists user_accounts cascade 
+2025-07-28 01:43:27 - 
+    drop table if exists user_source_analytics cascade 
+Hibernate: 
+    drop table if exists user_source_analytics cascade 
+2025-07-28 01:43:27 - 
+    create table customer_feedback (
+        cleanliness_rating integer check ((cleanliness_rating<=5) and (cleanliness_rating>=1)),
+        helpful_votes integer,
+        is_anonymous boolean not null,
+        is_public_visible boolean not null,
+        is_verified_review boolean not null,
+        not_helpful_votes integer,
+        overall_rating integer not null check ((overall_rating>=1) and (overall_rating<=5)),
+        report_count integer,
+        service_rating integer check ((service_rating<=5) and (service_rating>=1)),
+        sound_quality_rating integer check ((sound_quality_rating<=5) and (sound_quality_rating>=1)),
+        value_for_money_rating integer check ((value_for_money_rating>=1) and (value_for_money_rating<=5)),
+        video_quality_rating integer check ((video_quality_rating>=1) and (video_quality_rating<=5)),
+        admin_response_by_user_id bigint,
+        admin_response_date timestamp(6),
+        booking_id bigint,
+        created_at timestamp(6) not null,
+        feedback_id bigint generated by default as identity,
+        moderated_at timestamp(6),
+        moderated_by_user_id bigint,
+        theater_id bigint not null,
+        updated_at timestamp(6) not null,
+        user_id bigint not null,
+        feedback_language varchar(10),
+        submission_ip_address varchar(45),
+        feedback_source varchar(50),
+        device_info varchar(200),
+        review_title varchar(200),
+        recommendations TEXT,
+        review_comments TEXT,
+        admin_response TEXT,
+        feedback_status varchar(255) not null check (feedback_status in ('PENDING','APPROVED','REJECTED','HIDDEN','EDITED')),
+        moderation_notes TEXT,
+        original_comments TEXT,
+        rejection_reason TEXT,
+        primary key (feedback_id)
+    )
+Hibernate: 
+    create table customer_feedback (
+        cleanliness_rating integer check ((cleanliness_rating<=5) and (cleanliness_rating>=1)),
+        helpful_votes integer,
+        is_anonymous boolean not null,
+        is_public_visible boolean not null,
+        is_verified_review boolean not null,
+        not_helpful_votes integer,
+        overall_rating integer not null check ((overall_rating>=1) and (overall_rating<=5)),
+        report_count integer,
+        service_rating integer check ((service_rating<=5) and (service_rating>=1)),
+        sound_quality_rating integer check ((sound_quality_rating<=5) and (sound_quality_rating>=1)),
+        value_for_money_rating integer check ((value_for_money_rating>=1) and (value_for_money_rating<=5)),
+        video_quality_rating integer check ((video_quality_rating>=1) and (video_quality_rating<=5)),
+        admin_response_by_user_id bigint,
+        admin_response_date timestamp(6),
+        booking_id bigint,
+        created_at timestamp(6) not null,
+        feedback_id bigint generated by default as identity,
+        moderated_at timestamp(6),
+        moderated_by_user_id bigint,
+        theater_id bigint not null,
+        updated_at timestamp(6) not null,
+        user_id bigint not null,
+        feedback_language varchar(10),
+        submission_ip_address varchar(45),
+        feedback_source varchar(50),
+        device_info varchar(200),
+        review_title varchar(200),
+        recommendations TEXT,
+        review_comments TEXT,
+        admin_response TEXT,
+        feedback_status varchar(255) not null check (feedback_status in ('PENDING','APPROVED','REJECTED','HIDDEN','EDITED')),
+        moderation_notes TEXT,
+        original_comments TEXT,
+        rejection_reason TEXT,
+        primary key (feedback_id)
+    )
+2025-07-28 01:43:27 - 
+    create table otp_verifications (
+        attempt_count integer,
+        max_attempts integer,
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        otp_id bigint generated by default as identity,
+        user_id bigint,
+        verified_at timestamp(6),
+        otp_code varchar(10) not null,
+        mobile_number varchar(15) not null,
+        request_ip_address varchar(45),
+        sms_delivery_status varchar(50),
+        session_id varchar(100),
+        sms_message_id varchar(100),
+        request_device_info varchar(200),
+        request_purpose varchar(200),
+        request_user_agent varchar(500),
+        additional_data TEXT,
+        otp_status varchar(255) not null check (otp_status in ('SENT','VERIFIED','EXPIRED','INVALID','USED','FAILED')),
+        otp_type varchar(255) not null check (otp_type in ('LOGIN','REGISTRATION','PASSWORD_RESET','BOOKING_CONFIRMATION','SECURITY_VERIFICATION','PHONE_VERIFICATION')),
+        sms_provider_response TEXT,
+        primary key (otp_id)
+    )
+Hibernate: 
+    create table otp_verifications (
+        attempt_count integer,
+        max_attempts integer,
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        otp_id bigint generated by default as identity,
+        user_id bigint,
+        verified_at timestamp(6),
+        otp_code varchar(10) not null,
+        mobile_number varchar(15) not null,
+        request_ip_address varchar(45),
+        sms_delivery_status varchar(50),
+        session_id varchar(100),
+        sms_message_id varchar(100),
+        request_device_info varchar(200),
+        request_purpose varchar(200),
+        request_user_agent varchar(500),
+        additional_data TEXT,
+        otp_status varchar(255) not null check (otp_status in ('SENT','VERIFIED','EXPIRED','INVALID','USED','FAILED')),
+        otp_type varchar(255) not null check (otp_type in ('LOGIN','REGISTRATION','PASSWORD_RESET','BOOKING_CONFIRMATION','SECURITY_VERIFICATION','PHONE_VERIFICATION')),
+        sms_provider_response TEXT,
+        primary key (otp_id)
+    )
+2025-07-28 01:43:27 - 
+    create table private_theaters (
+        advance_booking_days integer check (advance_booking_days>=1),
+        average_rating numeric(3,2),
+        cancellation_policy_hours integer check (cancellation_policy_hours>=1),
+        hourly_rate numeric(10,2) not null,
+        latitude numeric(10,8),
+        longitude numeric(11,8),
+        maximum_booking_hours integer check (maximum_booking_hours>=1),
+        minimum_booking_hours integer check (minimum_booking_hours>=1),
+        popularity_score numeric(5,2),
+        seating_capacity integer not null check ((seating_capacity>=1) and (seating_capacity<=100)),
+        sound_system_rating integer check ((sound_system_rating<=5) and (sound_system_rating>=1)),
+        total_revenue numeric(15,2),
+        video_quality_rating integer check ((video_quality_rating>=1) and (video_quality_rating<=5)),
+        weekend_surcharge_percent numeric(5,2),
+        operating_hours_end varchar(5),
+        operating_hours_start varchar(5),
+        created_at timestamp(6) not null,
+        created_by_user_id bigint,
+        rating_count bigint,
+        theater_id bigint generated by default as identity,
+        total_bookings bigint,
+        updated_at timestamp(6) not null,
+        updated_by_user_id bigint,
+        contact_number varchar(15),
+        emergency_contact varchar(15),
+        postal_code varchar(20) not null,
+        city varchar(100) not null,
+        country varchar(100) not null,
+        state varchar(100) not null,
+        contact_email varchar(150),
+        theater_name varchar(150) not null,
+        landmark varchar(200),
+        accessibility_features TEXT,
+        amenities TEXT,
+        availability_status varchar(255) not null check (availability_status in ('AVAILABLE','MAINTENANCE','BOOKED','INACTIVE')),
+        description TEXT,
+        gallery_images TEXT,
+        primary_image_path varchar(255),
+        special_features TEXT,
+        street_address varchar(255) not null,
+        virtual_tour_url varchar(255),
+        primary key (theater_id)
+    )
+Hibernate: 
+    create table private_theaters (
+        advance_booking_days integer check (advance_booking_days>=1),
+        average_rating numeric(3,2),
+        cancellation_policy_hours integer check (cancellation_policy_hours>=1),
+        hourly_rate numeric(10,2) not null,
+        latitude numeric(10,8),
+        longitude numeric(11,8),
+        maximum_booking_hours integer check (maximum_booking_hours>=1),
+        minimum_booking_hours integer check (minimum_booking_hours>=1),
+        popularity_score numeric(5,2),
+        seating_capacity integer not null check ((seating_capacity>=1) and (seating_capacity<=100)),
+        sound_system_rating integer check ((sound_system_rating<=5) and (sound_system_rating>=1)),
+        total_revenue numeric(15,2),
+        video_quality_rating integer check ((video_quality_rating>=1) and (video_quality_rating<=5)),
+        weekend_surcharge_percent numeric(5,2),
+        operating_hours_end varchar(5),
+        operating_hours_start varchar(5),
+        created_at timestamp(6) not null,
+        created_by_user_id bigint,
+        rating_count bigint,
+        theater_id bigint generated by default as identity,
+        total_bookings bigint,
+        updated_at timestamp(6) not null,
+        updated_by_user_id bigint,
+        contact_number varchar(15),
+        emergency_contact varchar(15),
+        postal_code varchar(20) not null,
+        city varchar(100) not null,
+        country varchar(100) not null,
+        state varchar(100) not null,
+        contact_email varchar(150),
+        theater_name varchar(150) not null,
+        landmark varchar(200),
+        accessibility_features TEXT,
+        amenities TEXT,
+        availability_status varchar(255) not null check (availability_status in ('AVAILABLE','MAINTENANCE','BOOKED','INACTIVE')),
+        description TEXT,
+        gallery_images TEXT,
+        primary_image_path varchar(255),
+        special_features TEXT,
+        street_address varchar(255) not null,
+        virtual_tour_url varchar(255),
+        primary key (theater_id)
+    )
+2025-07-28 01:43:27 - 
+    create table theater_bookings (
+        additional_charges numeric(10,2),
+        base_amount numeric(10,2) not null,
+        booking_date date not null,
+        discount_amount numeric(10,2),
+        duration_hours numeric(3,1) not null,
+        email_sent boolean,
+        end_time time(6) not null,
+        number_of_guests integer not null check (number_of_guests>=1),
+        paid_amount numeric(10,2),
+        remaining_amount numeric(10,2),
+        reminder_count integer,
+        sms_sent boolean,
+        start_time time(6) not null,
+        surcharge_amount numeric(10,2),
+        tax_amount numeric(10,2),
+        total_amount numeric(10,2) not null,
+        whatsapp_sent boolean,
+        approval_timestamp timestamp(6),
+        approved_by_user_id bigint,
+        booking_id bigint generated by default as identity,
+        cancelled_at timestamp(6),
+        cancelled_by_user_id bigint,
+        created_at timestamp(6) not null,
+        payment_completed_at timestamp(6),
+        theater_id bigint not null,
+        updated_at timestamp(6) not null,
+        user_id bigint not null,
+        customer_aadhaar varchar(12),
+        customer_mobile varchar(15) not null,
+        booking_reference varchar(25) not null unique,
+        booking_ip_address varchar(45),
+        payment_method varchar(50),
+        customer_name varchar(100) not null,
+        payment_transaction_id varchar(100),
+        customer_email varchar(150),
+        booking_device_info varchar(200),
+        approval_comments TEXT,
+        approval_status varchar(255) check (approval_status in ('PENDING','APPROVED','REJECTED')),
+        booking_status varchar(255) not null check (booking_status in ('PENDING','CONFIRMED','APPROVED','REJECTED','CANCELLED','COMPLETED','NO_SHOW','REFUNDED')),
+        cancellation_reason TEXT,
+        internal_notes TEXT,
+        payment_response TEXT,
+        payment_status varchar(255) not null check (payment_status in ('PENDING','PROCESSING','COMPLETED','FAILED','REFUNDED','PARTIAL')),
+        special_requests TEXT,
+        primary key (booking_id)
+    )
+Hibernate: 
+    create table theater_bookings (
+        additional_charges numeric(10,2),
+        base_amount numeric(10,2) not null,
+        booking_date date not null,
+        discount_amount numeric(10,2),
+        duration_hours numeric(3,1) not null,
+        email_sent boolean,
+        end_time time(6) not null,
+        number_of_guests integer not null check (number_of_guests>=1),
+        paid_amount numeric(10,2),
+        remaining_amount numeric(10,2),
+        reminder_count integer,
+        sms_sent boolean,
+        start_time time(6) not null,
+        surcharge_amount numeric(10,2),
+        tax_amount numeric(10,2),
+        total_amount numeric(10,2) not null,
+        whatsapp_sent boolean,
+        approval_timestamp timestamp(6),
+        approved_by_user_id bigint,
+        booking_id bigint generated by default as identity,
+        cancelled_at timestamp(6),
+        cancelled_by_user_id bigint,
+        created_at timestamp(6) not null,
+        payment_completed_at timestamp(6),
+        theater_id bigint not null,
+        updated_at timestamp(6) not null,
+        user_id bigint not null,
+        customer_aadhaar varchar(12),
+        customer_mobile varchar(15) not null,
+        booking_reference varchar(25) not null unique,
+        booking_ip_address varchar(45),
+        payment_method varchar(50),
+        customer_name varchar(100) not null,
+        payment_transaction_id varchar(100),
+        customer_email varchar(150),
+        booking_device_info varchar(200),
+        approval_comments TEXT,
+        approval_status varchar(255) check (approval_status in ('PENDING','APPROVED','REJECTED')),
+        booking_status varchar(255) not null check (booking_status in ('PENDING','CONFIRMED','APPROVED','REJECTED','CANCELLED','COMPLETED','NO_SHOW','REFUNDED')),
+        cancellation_reason TEXT,
+        internal_notes TEXT,
+        payment_response TEXT,
+        payment_status varchar(255) not null check (payment_status in ('PENDING','PROCESSING','COMPLETED','FAILED','REFUNDED','PARTIAL')),
+        special_requests TEXT,
+        primary key (booking_id)
+    )
+2025-07-28 01:43:27 - 
+    create table user_accounts (
+        failed_login_attempts integer,
+        created_at timestamp(6) not null,
+        last_login_time timestamp(6),
+        lockout_time timestamp(6),
+        updated_at timestamp(6) not null,
+        user_id bigint generated by default as identity,
+        pan_number varchar(10),
+        aadhaar_number varchar(12),
+        mobile_number varchar(15) not null unique,
+        last_login_ip varchar(45),
+        full_name varchar(100) not null,
+        heard_about_us varchar(100),
+        email_address varchar(150),
+        last_login_device varchar(200),
+        source_details varchar(200),
+        aadhaar_document_path varchar(255),
+        account_status varchar(255) not null check (account_status in ('ACTIVE','INACTIVE','SUSPENDED','PENDING')),
+        kyc_status varchar(255) check (kyc_status in ('NOT_SUBMITTED','PENDING','VERIFIED','REJECTED')),
+        pan_document_path varchar(255),
+        profile_picture_path varchar(255),
+        user_role varchar(255) not null check (user_role in ('USER','MANAGER','ADMIN')),
+        primary key (user_id)
+    )
+Hibernate: 
+    create table user_accounts (
+        failed_login_attempts integer,
+        created_at timestamp(6) not null,
+        last_login_time timestamp(6),
+        lockout_time timestamp(6),
+        updated_at timestamp(6) not null,
+        user_id bigint generated by default as identity,
+        pan_number varchar(10),
+        aadhaar_number varchar(12),
+        mobile_number varchar(15) not null unique,
+        last_login_ip varchar(45),
+        full_name varchar(100) not null,
+        heard_about_us varchar(100),
+        email_address varchar(150),
+        last_login_device varchar(200),
+        source_details varchar(200),
+        aadhaar_document_path varchar(255),
+        account_status varchar(255) not null check (account_status in ('ACTIVE','INACTIVE','SUSPENDED','PENDING')),
+        kyc_status varchar(255) check (kyc_status in ('NOT_SUBMITTED','PENDING','VERIFIED','REJECTED')),
+        pan_document_path varchar(255),
+        profile_picture_path varchar(255),
+        user_role varchar(255) not null check (user_role in ('USER','MANAGER','ADMIN')),
+        primary key (user_id)
+    )
+2025-07-28 01:43:27 - 
+    create table user_source_analytics (
+        avg_customer_value numeric(10,2),
+        conversion_rate numeric(5,2),
+        is_active boolean,
+        marketing_cost numeric(10,2),
+        roi_percentage numeric(7,2),
+        source_quality_score numeric(3,1),
+        total_revenue numeric(15,2),
+        active_users_30_days bigint,
+        analytics_id bigint generated by default as identity,
+        booking_conversions bigint,
+        completed_registrations bigint,
+        created_at timestamp(6) not null,
+        first_registration_date timestamp(6),
+        last_registration_date timestamp(6),
+        updated_at timestamp(6) not null,
+        user_count bigint,
+        primary_age_group varchar(50),
+        primary_device_type varchar(50),
+        geographic_region varchar(100),
+        peak_activity_hours varchar(100),
+        source_category varchar(100) not null,
+        source_details varchar(200),
+        raw_source_data varchar(500),
+        growth_trend varchar(255) check (growth_trend in ('GROWING','STABLE','DECLINING','INACTIVE')),
+        notes TEXT,
+        priority_level varchar(255) check (priority_level in ('HIGH','MEDIUM','LOW')),
+        primary key (analytics_id)
+    )
+Hibernate: 
+    create table user_source_analytics (
+        avg_customer_value numeric(10,2),
+        conversion_rate numeric(5,2),
+        is_active boolean,
+        marketing_cost numeric(10,2),
+        roi_percentage numeric(7,2),
+        source_quality_score numeric(3,1),
+        total_revenue numeric(15,2),
+        active_users_30_days bigint,
+        analytics_id bigint generated by default as identity,
+        booking_conversions bigint,
+        completed_registrations bigint,
+        created_at timestamp(6) not null,
+        first_registration_date timestamp(6),
+        last_registration_date timestamp(6),
+        updated_at timestamp(6) not null,
+        user_count bigint,
+        primary_age_group varchar(50),
+        primary_device_type varchar(50),
+        geographic_region varchar(100),
+        peak_activity_hours varchar(100),
+        source_category varchar(100) not null,
+        source_details varchar(200),
+        raw_source_data varchar(500),
+        growth_trend varchar(255) check (growth_trend in ('GROWING','STABLE','DECLINING','INACTIVE')),
+        notes TEXT,
+        priority_level varchar(255) check (priority_level in ('HIGH','MEDIUM','LOW')),
+        primary key (analytics_id)
+    )
+2025-07-28 01:43:27 - 
+    alter table if exists customer_feedback 
+       add constraint FK3xi448r4me85anjykbj5rfc09 
+       foreign key (theater_id) 
+       references private_theaters
+Hibernate: 
+    alter table if exists customer_feedback 
+       add constraint FK3xi448r4me85anjykbj5rfc09 
+       foreign key (theater_id) 
+       references private_theaters
+2025-07-28 01:43:27 - 
+    alter table if exists customer_feedback 
+       add constraint FK5sa80wcsd7p3sddnxf1esy8qh 
+       foreign key (booking_id) 
+       references theater_bookings
+Hibernate: 
+    alter table if exists customer_feedback 
+       add constraint FK5sa80wcsd7p3sddnxf1esy8qh 
+       foreign key (booking_id) 
+       references theater_bookings
+2025-07-28 01:43:27 - 
+    alter table if exists customer_feedback 
+       add constraint FKkvkqddm5ueyswelu356gtfu35 
+       foreign key (user_id) 
+       references user_accounts
+Hibernate: 
+    alter table if exists customer_feedback 
+       add constraint FKkvkqddm5ueyswelu356gtfu35 
+       foreign key (user_id) 
+       references user_accounts
+2025-07-28 01:43:27 - 
+    alter table if exists theater_bookings 
+       add constraint FKi0k671ielojhx7upf2myhhny2 
+       foreign key (theater_id) 
+       references private_theaters
+Hibernate: 
+    alter table if exists theater_bookings 
+       add constraint FKi0k671ielojhx7upf2myhhny2 
+       foreign key (theater_id) 
+       references private_theaters
+2025-07-28 01:43:27 - 
+    alter table if exists theater_bookings 
+       add constraint FKc3jkxbvfjw4qodibhnjxjqyqm 
+       foreign key (user_id) 
+       references user_accounts
+Hibernate: 
+    alter table if exists theater_bookings 
+       add constraint FKc3jkxbvfjw4qodibhnjxjqyqm 
+       foreign key (user_id) 
+       references user_accounts
+2025-07-28 01:43:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-28 01:43:27 - 
+
+Using generated security password: 9e9b16f3-dc5c-4650-9ffe-088d99447e43
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-28 01:43:27 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42233c23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44158ea6, org.springframework.security.web.context.SecurityContextHolderFilter@5f8a7df2, org.springframework.security.web.header.HeaderWriterFilter@77193aae, org.springframework.security.web.authentication.logout.LogoutFilter@661daeff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fbdf767, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e6f59e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d05b0db, org.springframework.security.web.access.ExceptionTranslationFilter@c313013, org.springframework.security.web.access.intercept.AuthorizationFilter@1422425b]
+2025-07-28 01:43:27 - Adding welcome page: class path resource [static/index.html]
+2025-07-28 01:43:27 - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-07-28 01:43:27 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-28 01:43:28 - LiveReload server is running on port 35729
+2025-07-28 01:43:28 - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-07-28 01:43:28 - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-28 01:43:28 - Started NutanaaPrivateTheaterBookingApplication in 3.842 seconds (process running for 4.037)
+========================================
+🎬 NUTANAA PRIVATE THEATER BOOKING PLATFORM
+========================================
+✅ Application Started Successfully!
+🌐 Frontend: http://localhost:8080
+🔧 Admin Panel: http://localhost:8080/admin
+👨‍💼 Manager Panel: http://localhost:8080/manager
+📱 API Docs: http://localhost:8080/actuator
+========================================
+2025-07-28 01:43:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-28 01:43:40 - Initializing Servlet 'dispatcherServlet'
+2025-07-28 01:43:40 - Completed initialization in 1 ms
+2025-07-28 01:43:40 - Securing HEAD /
+2025-07-28 01:43:40 - Secured HEAD /
+2025-07-28 01:43:40 - Securing HEAD /index.html
+2025-07-28 01:43:40 - Secured HEAD /index.html
+2025-07-28 01:43:40 - Set SecurityContextHolder to anonymous SecurityContext
+2025-07-28 01:43:45 - Securing GET /
+2025-07-28 01:43:45 - Secured GET /
+2025-07-28 01:43:45 - Securing GET /index.html
+2025-07-28 01:43:45 - Secured GET /index.html
+2025-07-28 01:43:45 - Set SecurityContextHolder to anonymous SecurityContext

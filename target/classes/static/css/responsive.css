@@ -1,0 +1,600 @@
+/* ===================================
+   NUTANAA PRIVATE THEATER BOOKING PLATFORM
+   Responsive CSS File - Mobile & Tablet Support
+   =================================== */
+
+/* Mobile First Approach - Base styles are for mobile */
+
+/* Extra Small Devices (Portrait Phones) */
+@media only screen and (max-width: 575px) {
+    /* Typography */
+    .hero-title {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+    
+    .section-title {
+        font-size: 2rem !important;
+    }
+    
+    /* Header */
+    .header-container {
+        padding: 0 1rem;
+    }
+    
+    .brand-logo {
+        font-size: 1.5rem !important;
+    }
+    
+    .nav-menu {
+        display: none; /* Hide navigation on mobile, could be replaced with hamburger menu */
+    }
+    
+    .header-actions {
+        gap: 0.5rem;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .hero-stats {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+    
+    .stat-number {
+        font-size: 2rem !important;
+    }
+    
+    /* Sections */
+    .section-container {
+        padding: 0 1rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .theaters-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    /* Feature Cards */
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .feature-title {
+        font-size: 1.3rem !important;
+    }
+    
+    /* Theater Cards */
+    .theater-card {
+        margin-bottom: 1rem;
+    }
+    
+    .theater-image {
+        height: 180px;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95% !important;
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Forms */
+    .form-input,
+    .form-select {
+        padding: 14px 16px;
+        font-size: 1rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Chatbot */
+    .chatbot {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .chatbot-window {
+        width: calc(100vw - 2rem) !important;
+        height: 60vh !important;
+        right: 0;
+        bottom: 70px;
+    }
+    
+    /* Buttons */
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+    
+    /* Testimonials */
+    .testimonial-card {
+        min-width: 300px !important;
+    }
+    
+    /* CTA Section */
+    .cta-title {
+        font-size: 2.2rem !important;
+    }
+    
+    .cta-description {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Small Devices (Landscape Phones) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* Typography */
+    .hero-title {
+        font-size: 3rem !important;
+    }
+    
+    .section-title {
+        font-size: 2.5rem !important;
+    }
+    
+    /* Header */
+    .header-container {
+        padding: 0 1.5rem;
+    }
+    
+    /* Grid Layouts */
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    .theaters-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    /* Hero Stats */
+    .hero-stats {
+        gap: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 90% !important;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    /* Chatbot */
+    .chatbot-window {
+        width: 350px !important;
+        height: 450px !important;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* Typography */
+    .hero-title {
+        font-size: 3.5rem !important;
+    }
+    
+    .section-title {
+        font-size: 2.8rem !important;
+    }
+    
+    /* Header */
+    .header-container {
+        padding: 0 2rem;
+    }
+    
+    .nav-menu {
+        gap: 1.5rem;
+    }
+    
+    /* Grid Layouts */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    .theaters-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    /* Hero Actions */
+    .hero-actions {
+        gap: 2rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 80% !important;
+        max-width: 500px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    /* Testimonials */
+    .testimonial-card {
+        min-width: 350px !important;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    .header-container {
+        max-width: 1000px;
+    }
+    
+    /* Sections */
+    .section-container {
+        max-width: 1000px;
+    }
+    
+    /* Grid Layouts */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .theaters-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Full desktop styles are in main.css */
+    .section-container {
+        max-width: 1200px;
+    }
+    
+    .header-container {
+        max-width: 1200px;
+    }
+}
+
+/* Landscape Orientation Adjustments */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+    
+    .hero-stats {
+        margin-top: 1rem;
+    }
+    
+    .loading-screen {
+        padding: 2rem;
+    }
+    
+    .loading-logo {
+        font-size: 2rem !important;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch targets */
+    .btn-primary,
+    .btn-secondary {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .nav-link {
+        padding: 0.5rem;
+    }
+    
+    .form-input,
+    .form-select {
+        min-height: 44px;
+    }
+    
+    /* Remove hover effects on touch devices */
+    .feature-card:hover,
+    .theater-card:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* Larger chatbot for touch */
+    .chatbot-toggle {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 1.8rem !important;
+    }
+}
+
+/* High Resolution Displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+    /* Sharper borders and shadows */
+    .feature-card,
+    .theater-card,
+    .modal-content {
+        border-width: 0.5px;
+    }
+    
+    /* Better text rendering */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    /* Enhanced dark mode styles if needed */
+    .main-header {
+        background: rgba(10, 10, 10, 0.95) !important;
+    }
+    
+    .loading-screen {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%) !important;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .hero-section,
+    .feature-card,
+    .theater-card,
+    .testimonials-slider {
+        animation: none !important;
+    }
+    
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .feature-card:hover,
+    .theater-card:hover {
+        transform: none !important;
+    }
+    
+    .loading-spinner {
+        animation: none !important;
+        border: 4px solid #ff6b6b;
+        border-top: 4px solid transparent;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-header,
+    .chatbot,
+    .scroll-top,
+    .hero-video,
+    .loading-screen {
+        display: none !important;
+    }
+    
+    .hero-section {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .section-title,
+    .hero-title {
+        color: black !important;
+    }
+    
+    .feature-card,
+    .theater-card {
+        border: 1px solid #ccc !important;
+        background: white !important;
+        color: black !important;
+        break-inside: avoid;
+    }
+    
+    .main-footer {
+        page-break-before: always;
+    }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        background: #000 !important;
+        color: #fff !important;
+        border: 2px solid #fff !important;
+    }
+    
+    .btn-secondary {
+        background: #fff !important;
+        color: #000 !important;
+        border: 2px solid #000 !important;
+    }
+    
+    .feature-card,
+    .theater-card {
+        border: 2px solid #fff !important;
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+}
+
+/* Focus Visible Support */
+@supports selector(:focus-visible) {
+    .btn-primary:focus,
+    .btn-secondary:focus,
+    .form-input:focus,
+    .form-select:focus {
+        outline: none;
+    }
+    
+    .btn-primary:focus-visible,
+    .btn-secondary:focus-visible,
+    .form-input:focus-visible,
+    .form-select:focus-visible {
+        outline: 2px solid #ff6b6b;
+        outline-offset: 2px;
+    }
+}
+
+/* Container Queries (Future Support) */
+@supports (container-type: inline-size) {
+    .feature-card {
+        container-type: inline-size;
+    }
+    
+    @container (max-width: 300px) {
+        .feature-icon {
+            font-size: 2rem !important;
+        }
+        
+        .feature-title {
+            font-size: 1.2rem !important;
+        }
+    }
+}
+
+/* Specific Breakpoint Utilities */
+.mobile-only {
+    display: block;
+}
+
+.tablet-up {
+    display: none;
+}
+
+.desktop-up {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+    
+    .tablet-up {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .desktop-up {
+        display: block;
+    }
+}
+
+/* Loading State Responsiveness */
+@media (max-width: 767px) {
+    .loading-logo {
+        font-size: 2rem !important;
+    }
+    
+    .loading-spinner {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+/* Viewport Height Adjustments */
+@media (max-height: 600px) {
+    .hero-section {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+    
+    .modal-content {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .chatbot-window {
+        height: 300px !important;
+    }
+}
+
+/* Ultra-wide Screens */
+@media (min-width: 1400px) {
+    .section-container {
+        max-width: 1400px;
+    }
+    
+    .header-container {
+        max-width: 1400px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
